@@ -10,6 +10,11 @@
     transition: all 0.2s ease-in-out;
 }
 
+.active {
+    fill: #bdae82;
+    color: #bdae82;
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -35,8 +40,22 @@ body {
 .logo-bird {
     height: 60px;
     width: 60px;
-    fill: rgb(154, 142, 105);
+    fill: #ffffff;
 }
+
+.logo-bird:hover {
+    fill: #bdae82
+}
+
+.logo-bird.active {
+    fill: #bdae82;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo-bird.active:hover {
+    fill: #ffffff;
+}
+
 
 .nav {
     display: flex;
@@ -71,21 +90,14 @@ body {
 }
 
 .main__button-play {
-}
-
-.button-play {
 
 }
 
 .main__button-pause {
-}
-
-.button-pause {
     display: none;
-
 }
 
-.button-downland {
+.main__button-downland {
     height: 60px;
     width: 60px;
     padding-top: 30px;

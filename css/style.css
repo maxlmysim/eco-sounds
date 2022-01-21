@@ -80,7 +80,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
 }
 
 .button {
@@ -97,7 +98,7 @@ body {
     display: none;
 }
 
-.main__button-downland {
+.main__button-download {
     height: 60px;
     width: 60px;
     padding-top: 30px;

@@ -21,7 +21,7 @@ function changeStyle(event) {
         });
     });
 
-    event.target.classList.add('active');
+    event.target.classList.toggle('active');
 }
 
 function changeSound(event) {
@@ -35,11 +35,25 @@ function changeSound(event) {
 
 }
 
+function downloadSound() {
+    let a = document.createElement('a')
+    a.href = audio.src;
+    a.download = '';
+    document.body.append(a)
+    a.click();
+    a.remove()
+}
+
 const audio = document.querySelector('.audio');
 const chooseSound = document.querySelector('.header-container');
 const buttonPlay = document.querySelector('.main__button-play');
 const buttonPause = document.querySelector('.main__button-pause');
+const logoBird = document.querySelector('.logo-bird')
+const buttonDownload = document.querySelector('.main__button-download')
 
 chooseSound.addEventListener('click', changeSound);
 buttonPlay.addEventListener('click', playAudio);
 buttonPause.addEventListener('click', pauseAudio);
+logoBird.addEventListener('click', changeSound)
+buttonDownload.addEventListener('click', downloadSound)
+

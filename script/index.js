@@ -1,3 +1,10 @@
+function preloadImages() {
+    ['drozd', 'forest', 'javoronok', 'slavka', 'solovey', 'zarynka'].forEach((name) => {
+        let img = new Image;
+        img.src = `./assets/img/${name}.jpg`;
+    });
+}
+
 function playAudio() {
     buttonPause.style.display = 'block';
     buttonPlay.style.display = 'none';
@@ -36,24 +43,26 @@ function changeSound(event) {
 }
 
 function downloadSound() {
-    let a = document.createElement('a')
+    let a = document.createElement('a');
     a.href = audio.src;
     a.download = '';
-    document.body.append(a)
+    document.body.append(a);
     a.click();
-    a.remove()
+    a.remove();
 }
 
 const audio = document.querySelector('.audio');
 const chooseSound = document.querySelector('.header-container');
 const buttonPlay = document.querySelector('.main__button-play');
 const buttonPause = document.querySelector('.main__button-pause');
-const logoBird = document.querySelector('.logo-bird')
-const buttonDownload = document.querySelector('.main__button-download')
+const logoBird = document.querySelector('.logo-bird');
+const buttonDownload = document.querySelector('.main__button-download');
+
+preloadImages();
 
 chooseSound.addEventListener('click', changeSound);
 buttonPlay.addEventListener('click', playAudio);
 buttonPause.addEventListener('click', pauseAudio);
-logoBird.addEventListener('click', changeSound)
-buttonDownload.addEventListener('click', downloadSound)
+logoBird.addEventListener('click', changeSound);
+buttonDownload.addEventListener('click', downloadSound);
 

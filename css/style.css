@@ -1,144 +1,126 @@
 .text-link {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .text-link:hover {
-    color: #bdae82;
-    cursor: pointer;
-    fill: #bdae82;
-    transition: all 0.2s ease-in-out;
+  color: #bdae82;
+  cursor: pointer;
+  fill: #bdae82;
+  transition: all 0.2s ease-in-out;
 }
 
 .active {
-    fill: #bdae82;
-    color: #bdae82;
+  fill: #bdae82;
+  color: #bdae82;
 }
 
 body {
-    margin: 0;
-    background-color: black;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    width: calc(100% - 60px);
-    max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: calc(100% - 60px);
+  max-width: 1440px;
 }
 
 .logo-bird {
-    height: 60px;
-    width: 60px;
-    fill: #ffffff;
+  height: 60px;
+  width: 60px;
+  fill: #ffffff;
 }
 
 .logo-bird:hover {
-    fill: #bdae82
+  fill: #bdae82;
 }
 
 .logo-bird.active {
-    fill: #bdae82;
-    transition: all 0.2s ease-in-out;
+  fill: #bdae82;
+  transition: all 0.2s ease-in-out;
 }
 
 .logo-bird.active:hover {
-    fill: #ffffff;
+  fill: #ffffff;
 }
 
-
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 600px;
 }
 
 .nav__item:hover {
-    color: #bdae82;
-    cursor: pointer;
+  color: #bdae82;
+  cursor: pointer;
 }
 
-
 .main-container {
-    background-image: url(../assets/img/forest.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: calc(100vh - 120px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all 0.5s ease-in-out;
+  background-image: url(../assets/img/forest.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
 }
 
 .button {
-    fill: rgb(154, 142, 105);
-    height: 150px;
-    width: 150px;
-}
-
-.main__button-play {
-
+  fill: rgb(154, 142, 105);
+  height: 150px;
+  width: 150px;
 }
 
 .main__button-pause {
-    display: none;
+  display: none;
 }
 
 .main__button-download {
-    height: 60px;
-    width: 60px;
-    padding-top: 30px;
+  height: 60px;
+  width: 60px;
+  padding-top: 30px;
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    width: calc(100% - 60px);
-    max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: calc(100% - 60px);
+  max-width: 1440px;
 }
 
 .footer__data {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.copyright {
-}
-
-.year {
-}
-
-.github-username {
-}
-
-.footer__rss-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
 }
 
 .rss-logo {
-    fill: #ffffff;
-    height: 50px;
-    width: 135px;
+  fill: #ffffff;
+  height: 50px;
+  width: 135px;
 }
